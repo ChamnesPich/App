@@ -1,0 +1,15 @@
+body{
+
+	width: 1024px;
+	margin: 0 auto;
+	background: #e5e5e5;
+
+}
+
+#Top{
+	width: 1024px;
+	height:1447px;
+	background: url("scanA4.jpg");
+
+
+}

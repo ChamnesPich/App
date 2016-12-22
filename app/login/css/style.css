@@ -1,0 +1,354 @@
+/*
+  FontAwesome - The best icon font ever :)
+  http://fortawesome.github.io/Font-Awesome/
+
+  Thanks to Dave Gandy and all involved in FontAwesome !!!
+*/
+[class^="icon"], [class*=" icon"] {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 80px;
+  background-color: #292931;
+  font: 14px/22px "Calluna Sans", "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h2 {
+  font-size: 18px;
+  color: #544A5A;
+  margin-left: 20px;
+  float: left;
+  margin-top: 20px;
+}
+
+.forgot {
+  font-size: 12px;
+  color: #544A5A;
+  font-weight: bold;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.loginWrapper {
+  margin: 0 auto;
+  width: 240px;
+  padding-top: 3px;
+  position: relative;
+}
+
+.inputWrapper {
+  width: 100%;
+  position: relative;
+}
+.inputWrapper:first-child {
+  margin-bottom: 15px;
+}
+.inputWrapper.iconUser:before, .inputWrapper.iconPw:before {
+  color: #847384;
+  border-right: solid 1px #CECECE;
+  text-align: center;
+  padding-top: 10px;
+  display: inline-block;
+  height: 26px;
+  width: 35px;
+  background-color: #DEDEDE;
+  font-size: 14px;
+  line-height: 14px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.inputWrapper.iconUser:before {
+  content: "\f007";
+}
+.inputWrapper.iconPw:before {
+  content: "\f084";
+}
+
+.rainbowBar {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  position: relative;
+  left: -240px;
+}
+.rainbowBar li {
+  display: none;
+  width: 240px;
+  height: 3px;
+  position: absolute;
+  z-index: 0;
+  top: -3px;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2FkNmJhZCIvPjxzdG9wIG9mZnNldD0iMTQlIiBzdG9wLWNvbG9yPSIjZjdmN2M1Ii8+PHN0b3Agb2Zmc2V0PSIyMCUiIHN0b3AtY29sb3I9IiNkNGVmYjAiLz48c3RvcCBvZmZzZXQ9IjI4JSIgc3RvcC1jb2xvcj0iI2EwZGU4NCIvPjxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjOWNkNjkzIi8+PHN0b3Agb2Zmc2V0PSI0MiUiIHN0b3AtY29sb3I9IiM5NGQ2YWUiLz48c3RvcCBvZmZzZXQ9IjQzJSIgc3RvcC1jb2xvcj0iIzk0Y2ViYSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjOGNjM2RkIi8+PHN0b3Agb2Zmc2V0PSI1NSUiIHN0b3AtY29sb3I9IiM5NGIzZDIiLz48c3RvcCBvZmZzZXQ9IjYyJSIgc3RvcC1jb2xvcj0iIzljYTdjNSIvPjxzdG9wIG9mZnNldD0iNzMlIiBzdG9wLWNvbG9yPSIjYjU3OWE4Ii8+PHN0b3Agb2Zmc2V0PSI4MyUiIHN0b3AtY29sb3I9IiNkNjQwN2IiLz48c3RvcCBvZmZzZXQ9IjkzJSIgc3RvcC1jb2xvcj0iI2JkNTI5NCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2FkNmJhZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ad6bad), color-stop(14%, #f7f7c5), color-stop(20%, #d4efb0), color-stop(28%, #a0de84), color-stop(35%, #9cd693), color-stop(42%, #94d6ae), color-stop(43%, #94ceba), color-stop(50%, #8cc3dd), color-stop(55%, #94b3d2), color-stop(62%, #9ca7c5), color-stop(73%, #b579a8), color-stop(83%, #d6407b), color-stop(93%, #bd5294), color-stop(100%, #ad6bad));
+  background: -moz-linear-gradient(left, #ad6bad 0%, #f7f7c5 14%, #d4efb0 20%, #a0de84 28%, #9cd693 35%, #94d6ae 42%, #94ceba 43%, #8cc3dd 50%, #94b3d2 55%, #9ca7c5 62%, #b579a8 73%, #d6407b 83%, #bd5294 93%, #ad6bad 100%);
+  background: -webkit-linear-gradient(left, #ad6bad 0%, #f7f7c5 14%, #d4efb0 20%, #a0de84 28%, #9cd693 35%, #94d6ae 42%, #94ceba 43%, #8cc3dd 50%, #94b3d2 55%, #9ca7c5 62%, #b579a8 73%, #d6407b 83%, #bd5294 93%, #ad6bad 100%);
+  background: linear-gradient(to right, #ad6bad 0%, #f7f7c5 14%, #d4efb0 20%, #a0de84 28%, #9cd693 35%, #94d6ae 42%, #94ceba 43%, #8cc3dd 50%, #94b3d2 55%, #9ca7c5 62%, #b579a8 73%, #d6407b 83%, #bd5294 93%, #ad6bad 100%);
+}
+.rainbowBar li:nth-child(2) {
+  display: block;
+}
+.rainbowBar li:nth-child(1) {
+  left: 0px;
+}
+.rainbowBar li:nth-child(2) {
+  left: 240px;
+}
+.rainbowBar li:nth-child(3) {
+  left: 480px;
+}
+
+.loginBox {
+  position: relative;
+  padding: 20px;
+  background-color: #423142;
+  z-index: 50;
+}
+.loginBox:after {
+  top: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #423142;
+  border-width: 8px;
+  left: 30px;
+  margin-left: -10px;
+}
+
+.input {
+  color: #737373;
+  height: 36px;
+  background-color: white;
+  border: none;
+  width: 162px;
+  font: 14px/22px "Calluna Sans", "Gill Sans", Calibri, "Trebuchet MS", sans-serif;
+  padding: 3px 5px;
+  position: absolute;
+  left: 36px;
+}
+.input.inputPw {
+  right: 36px;
+}
+.input:not(.inputPw) {
+  right: 0px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 36px;
+  width: 36px;
+  text-align: center;
+  background-color: #AD6BAD;
+  color: white;
+  display: block;
+  text-decoration: none;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.button:before {
+  content: "\f0da";
+  display: block;
+  padding-top: 6px;
+}
+.button:focus {
+  outline: none;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    left: -240px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@-moz-keyframes slide {
+  0% {
+    left: -240px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@-o-keyframes slide {
+  0% {
+    left: -240px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes slide {
+  0% {
+    left: -240px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes bubble {
+  0% {
+    right: 0px;
+  }
+  70% {
+    right: -100px;
+  }
+  100% {
+    right: -80px;
+  }
+}
+@-moz-keyframes bubble {
+  0% {
+    right: 0px;
+  }
+  70% {
+    right: -100px;
+  }
+  100% {
+    right: -80px;
+  }
+}
+@-o-keyframes bubble {
+  0% {
+    right: 0px;
+  }
+  70% {
+    right: -100px;
+  }
+  100% {
+    right: -80px;
+  }
+}
+@keyframes bubble {
+  0% {
+    right: 0px;
+  }
+  70% {
+    right: -100px;
+  }
+  100% {
+    right: -80px;
+  }
+}
+.loading {
+  overflow: hidden;
+}
+.loading .rainbowBar {
+  -webkit-animation: slide 1s infinite linear;
+  -moz-animation: slide 1s infinite linear;
+  -o-animation: slide 1s infinite linear;
+  animation: slide 1s infinite linear;
+}
+.loading .rainbowBar li {
+  display: block;
+}
+.loading .button:before {
+  content: "\f021";
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+  padding-top: 0px;
+  margin-top: 5px;
+}
+
+.errorBubble {
+  position: absolute;
+  color: white;
+  background-color: #E62163;
+  height: 36px;
+  top: 0;
+  right: 10px;
+  padding: 6px 10px;
+}
+.errorBubble:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #E62163;
+  border-width: 6px;
+  top: 12px;
+}
+
+.error .errorBubble {
+  -webkit-animation: bubble .3s linear;
+  -moz-animation: bubble .3s linear;
+  -o-animation: bubble .3s linear;
+  animation: bubble .3s linear;
+  right: -80px;
+}
+.error .iconUser:before {
+  content: "\f06a";
+  color: white;
+  background-color: #E62163;
+}

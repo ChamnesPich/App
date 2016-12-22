@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+ <div id="header">
+ <img src="vb_logo.gif" alt="" />
+ 	
+<div id="menu"> 
+
+<ul>
+  <li><a href="default.asp">Home</a></li>
+  <li><a href="news.asp">News</a></li>
+  <li><a href="contact.asp">Contact</a></li>
+  <li><a href="about.asp">About</a></li>
+</ul> 
+
+</div>
+
+ </div>
+
+ <div id="main">Setting the width of a block-level element will prevent it from stretching out to the edges of its container to the left and right. Then, you can set the left and right margins to auto to horizontally center that element within its container. The element will take up the width you specify, then the remaining space will be split evenly between the two margins.
+
+The only problem occurs when the browser window is narrower than the width of your element. The browser resolves this by creating a horizontal scrollbar on the page. Let's improve the situation... </div>
+
+
+<div id="left">
+
+<form action="#" method="post" name="f">
+<p><b>SELECT</b></p>
+<fieldset>
+<legend>Personal Information</legend>
+	<label for="firstname" accesskey="f">First name: </label>
+		<input type="text" id="firstname" name="firstname" tabindex="1" value="" title="first name"><br>
+	<label for="lastname" accesskey="l">Last name: </label>
+		<input type="text" id="lastname" name="lastname" tabindex="2" title="last name"><br>
+	<label for="email" class="required" accesskey="e">Email: </label>
+		<input type="text" id="email" name="email" tabindex="3" title="email"><br>
+		<small>Your email address is safe with us, until we're acquired.</small>
+</fieldset>
+<fieldset>
+<legend>Comments</legend>
+<label for="comments" accesskey="c">Comments: </label>
+	<textarea name="comments" rows="3" cols="23" id="comments" tabindex="4" title="comments"></textarea><br>
+<label for="kludge"></label>
+	<input id="submit" type="submit" value="Select" id="submit" tabindex="5"> <INPUT id="submit" type="reset" id="reset" tabindex="6">
+</fieldset>
+</form>
+</div>
+
+<div id="right">
+
+<form action="#" method="post" name="f">
+<p><b>INSERT</b></p>
+<fieldset>
+<legend>Personal Information</legend>
+	<label for="firstname" accesskey="f">First name: </label>
+		<input type="text" id="firstname" name="firstname" tabindex="1" value="" title="first name"><br>
+	<label for="lastname" accesskey="l">Last name: </label>
+		<input type="text" id="lastname" name="lastname" tabindex="2" title="last name"><br>
+	<label for="email" class="required" accesskey="e">Email: </label>
+		<input type="text" id="email" name="email" tabindex="3" title="email"><br>
+		<small>Your email address is safe with us, until we're acquired.</small>
+</fieldset>
+<fieldset>
+<legend>Comments</legend>
+<label for="comments" accesskey="c">Comments: </label>
+	<textarea name="comments" rows="3" cols="23" id="comments" tabindex="4" title="comments"></textarea><br>
+<label for="kludge"></label>
+	<input type="submit" value="Insert" id="submit" tabindex="5"> <INPUT value="Reset" type="reset" id="submit" tabindex="6">
+</fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer><a href="#"><h3>Local Contact</h3></a>
+
+</footer>
+
+
+</body>
+</html>

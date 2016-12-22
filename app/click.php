@@ -26,16 +26,13 @@
                     
                      success:function(data)  
                      {  
-                          $('#result').html(data);  
+                          $('#result').text(data);  
                      }  
                 });  
            }  
         
       });  
   
-
-
-  <input required id="startDate" name="startDate" type="date" value="@Model.StartDate.ToString("yyyy-MM-dd")" />
-<input required id="endDate" name="endDate" type="date" value="@Model.EndDate.ToString("yyyy-MM-dd")" />
+ </script>  
  </body>
  </html>
